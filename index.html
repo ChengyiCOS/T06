@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TV Energy Consumption | Interactive Visualisations</title>
+
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/visualization.css">
+</head>
+<body>
+    <header>
+        <h1>TV Energy Consumption</h1>
+    </header>
+
+    <main>
+        <div class="content">
+
+            <h2>Energy Consumption for different TVs types and sizes</h2>
+
+            <p class="lead">
+                Most TVs on sale in Australia are LED and they vary considerably
+                in energy consumption.
+            </p>
+
+            <!-- T06-1: Interactive Histogram -->
+            <h3 class="filter-heading">Screen technology</h3>
+            <div id="filters_screen" aria-label="Filter by screen technology"></div>
+
+            <section
+                id="histogram"
+                class="responsive-svg-container"
+                aria-label="Histogram of television energy consumption">
+            </section>
+
+            <!-- T06-2: Interactive Scatterplot -->
+            <section class="chart-section">
+                <h3>Energy Consumption by Star Rating</h3>
+
+                <p class="chart-description">
+                    Explore the relationship between TV star ratings and
+                    energy consumption. Hover over a point to view its screen size.
+                </p>
+
+                <div
+                    id="scatterplot"
+                    class="responsive-svg-container"
+                    aria-label="Scatterplot of TV energy consumption by star rating">
+                </div>
+            </section>
+
+            <!-- Data source -->
+            <div class="body">
+                <h3>Data source</h3>
+                <p>
+                    <a href="https://data.gov.au/"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                        Energy Rating Data for household appliances – Televisions
+                    </a>
+                    <br>
+                    Downloaded January 2025.
+                </p>
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Data Visualisation Week 6</p>
+    </footer>
+
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+
+    <script src="js/shared-constants.js"></script>
+    <script src="js/histogram.js"></script>
+    <script src="js/scatterplot.js"></script>
+    <script src="js/interactions.js"></script>
+    <script src="js/load-data.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,134 @@
+
+/* Shared SVG styles */
+.responsive-svg-container svg {
+    display: block;
+    width: 100%;
+    height: auto;
+    overflow: visible;
+}
+
+/* Histogram bars */
+.histogram-bar {
+    fill: #808080;
+    stroke: #fffaf0;
+    stroke-width: 1.2px;
+}
+
+/* Chart axes */
+.axis path,
+.axis line {
+    stroke: #8b7868;
+}
+
+.axis text {
+    fill: #5a3e2b;
+    font-size: 12px;
+}
+
+/* Axis labels */
+.axis-label {
+    font-family: Roboto, Arial, sans-serif;
+    font-size: 14px;
+    fill: #5a3e2b;
+}
+
+/* Chart titles */
+.chart-title {
+    font-size: 17px;
+    font-weight: 700;
+    fill: #5a3e2b;
+}
+
+/* Gridlines */
+.grid line {
+    stroke: #e8ded4;
+    stroke-opacity: .9;
+    shape-rendering: crispEdges;
+}
+
+.grid path {
+    display: none;
+}
+
+/* Scatterplot points */
+.scatter-point {
+    stroke: none;
+    cursor: pointer;
+    transition: opacity .15s ease;
+}
+
+.scatter-point:hover {
+    opacity: 1;
+}
+
+/* Scatterplot legend */
+.legend-title {
+    font-size: 13px;
+    font-weight: 700;
+    fill: #5a3e2b;
+}
+
+.legend-text {
+    font-size: 12px;
+    fill: #5a3e2b;
+}
+
+/* Tooltip */
+.scatter-tooltip {
+    pointer-events: none;
+}
+
+.tooltip-background {
+    fill: #5a3e2b;
+    fill-opacity: .92;
+    rx: 6px;
+}
+
+.tooltip-text {
+    fill: #ffffff;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+/* Scatterplot section */
+.chart-section {
+    margin-top: 30px;
+}
+
+.chart-section h3 {
+    margin-bottom: 8px;
+}
+
+.chart-description {
+    color: #6b5e53;
+    font-size: 14px;
+    margin-bottom: 12px;
+}
+
+.error-message {
+    color: #b00020;
+    padding: 15px;
+}
+
+/* Responsive styles */
+@media (max-width: 596px) {
+    .axis text {
+        font-size: 10px;
+    }
+
+    .axis-label {
+        font-size: 12px;
+    }
+
+    .chart-title {
+        font-size: 14px;
+    }
+
+    .legend-text {
+        font-size: 10px;
+    }
+
+    .tooltip-text {
+        font-size: 10px;
+    }
+}
